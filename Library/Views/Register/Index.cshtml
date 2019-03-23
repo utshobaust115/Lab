@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/ViewPage2.cshtml";
+}
+
+<div class="login-form w3_form">
+    <!--  Title-->
+    <div class="login-title w3_title">
+        <h1>Library Managebment System</h1>
+    </div>
+    <div class="login w3_login">
+        <h2 class="login-header w3_header">Sign Up</h2>
+        <div class="w3l_grid">
+            <form class="login-container" action="Register" method="post">
+                <input type="text" placeholder="Name" Name="name" required="">
+                <input type="text" placeholder="Email" Name="email" required="">
+                <input type="text" placeholder="Country" Name="country" required="">
+                <select id="gender" name="gender" required="">
+                    <option>..Gender..</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input type="text" placeholder="Phone Number" Name="phone" required="">
+                <input type="text" placeholder="Username" Name="user_name" required="">
+                <input type="password" placeholder="Password" Name="password" required="">
+                <input type="submit" value="Sign Up">
+            </form>
+            <br>
+
+            <div class="bottom-text w3_bottom_text">
+                <p>Already Have an Accoutn?<a href=@Url.Action("Index","Login")>Login</a></p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
